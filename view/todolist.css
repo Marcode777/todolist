@@ -1,3 +1,7 @@
 .jumbotron {
   background-color: #809fff;
 }
+.done-true {
+  text-decoration: line-through;
+  color: gray;
+}
