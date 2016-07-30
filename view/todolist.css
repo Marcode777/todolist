@@ -6,6 +6,10 @@
   color: gray;
 }
 
+.w{
+  position:relative;
+}
+
 h1{
-  positon:relative;
+  position: relative;
 }

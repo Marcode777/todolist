@@ -1,4 +1,7 @@
+ 
+TweenMax.from("h1", 2.5, {x:-600, rotation:360});
 
+ // var Anim = TweenMax.to(".w", 1, { x:-100 , opacity:0 , ease:Power1.easeInOut ,repeat:-1 , paused:true });
 
 
 function TodoCtrl($scope){
@@ -8,6 +11,7 @@ function TodoCtrl($scope){
   {text:'3', done:false}
   ];
 
+  // $('.btn').click( function(){  Anim.play()  }) ;
 
   $scope.getTotalTodos = function(){
     return $scope.todos.length;
@@ -16,6 +20,7 @@ function TodoCtrl($scope){
   $scope.addTodo = function (){
     $scope.todos.push({text:$scope.formTodoText, done:false});
     $scope.formTodoText = '';
+
   }
 
   $scope.clearCompleted = function(){
@@ -24,4 +29,6 @@ function TodoCtrl($scope){
     })
   };
 
+
 };
+
