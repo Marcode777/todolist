@@ -17,7 +17,7 @@
     <h2>Total todos: {{getTotalTodos()}}</h2>
     <ul class="unstyled">
       <li ng-repeat="todo in todos">
-        <input id="checkbox" type="checkbox" ng-model="todo.done">
+        <input id="checkbox"type="checkbox" ng-model="todo.done">
         <span class="done-{{todo.done}}">{{todo.text}}</span>
       </li>
     </ul>

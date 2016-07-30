@@ -13,3 +13,8 @@
 h1{
   position: relative;
 }
+
+ul {
+    list-style-position: inside;
+    /* this allows the actual bullet points themselves to also align themselves within the div*/
+}
