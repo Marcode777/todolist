@@ -18,3 +18,13 @@ ul {
     list-style-position: inside;
     /* this allows the actual bullet points themselves to also align themselves within the div*/
 }
+
+.btn:hover {
+  transition: 0.5s ease 0s;
+  background-color: blue;
+}
+
+.btn-large:hover{
+  transition: 0.5s ease 0s;
+  background-color:green;
+}
