@@ -1,5 +1,5 @@
  
-TweenMax.from("h1", 2, {x:-600});
+TweenMax.from("h1", 1.5, {x:-600});
 
  // var Anim = TweenMax.to(".w", 1, { x:-100 , opacity:0 , ease:Power1.easeInOut ,repeat:-1 , paused:true });
 
