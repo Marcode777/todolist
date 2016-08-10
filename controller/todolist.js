@@ -16,6 +16,10 @@ TweenMax.from("h1", 1.5, {x:-600});
   paused:true
 });
 
+$('.carousel').carousel({
+  interval: 3000 //changes the speed
+  })
+
 function TodoCtrl($scope){
   $scope.todos =[
   {text:'1', done:false},

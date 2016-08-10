@@ -10,7 +10,39 @@
 <body>
   <div class="jumbotron">
     <h1 class="main" align="center">TODOLIST</h1>
+     <div id="candy" class="container-fluid">
+      <header id="myCarousel" class="carousel fade">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for Slides -->
+      <div class="candycarousel-inner">
+          <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <img src="https://thumbs.dreamstime.com/z/pen-pad-paper-6953315.jpg">
+              <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Dodgeball_on_court.JPG"> -->
+          </div>
+          <div class="item">
+              <!-- Set the  second background image using inline CSS below. -->
+              <img src="http://previews.123rf.com/images/sorsillo/sorsillo0907/sorsillo090700010/5150023-A-small-leather-bound-notebook-with-pen-laying-on-top-of-it-against-white-Stock-Photo.jpg">
+           <!--    <img src="http://www.hdwallpapersnews.com/wp-content/uploads/2015/03/Basketball-Desktop-Themes.jpg"> -->
+          </div>
+          <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <img src="https://thumbs.dreamstime.com/t/notebook-pen-4335825.jpg"> 
+          </div>
+      </div>
+      <!-- Controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>  <a class="right carousel-control" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> 
+    </header>
   </div>
+  </div>
+
+ 
+
+
   <div class="spin" align="center">
     <p>todolist</p>
   </div>
@@ -30,7 +62,8 @@
     <button class="btn-large" ng-click="clearCompleted()">Clear Completed</button>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script> <!--remember that greensock has to be loaded before main js file-->
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><!--added for the $ jquery function to work-->
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>  <!--added for the $ jquery function to work, needed below version 3-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!--added for the carousel-->
   <script type="text/javascript" src="../controller/todolist.js"></script>
 </body>
 </html>
